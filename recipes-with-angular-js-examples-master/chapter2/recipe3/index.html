@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="js/angular.js"></script>
+    <script>
+	function MyCtrl($scope) {
+		$scope.value = 1;
+			$scope.getIncrementedValue = function() {
+			return $scope.value + 1;
+		};
+	}
+	</script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body ng-app>
+    <div ng-controller="MyCtrl">
+      <p>{{getIncrementedValue()}}</p>
+    </div>
+  </body>
+</html>
